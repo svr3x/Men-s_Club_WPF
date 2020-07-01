@@ -1,0 +1,86 @@
+﻿<Window x:Class="Mens_ClubWPF.Zakaz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mens_ClubWPF"
+        mc:Ignorable="d"
+        Title="Zakaz" Height="700" Width="800" Loaded="Zakaz_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Name="lblTitle" Content="Заказ" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30"></Label>
+        <DataGrid Name="dgZakaz" Grid.Row="1" IsReadOnly="True" Grid.Column="0" Grid.ColumnSpan="4"
+                Grid.RowSpan="3" ColumnWidth="auto" AutoGenerateColumns="True" AutoGeneratingColumn="DgZakaz_AutoGeneratingColumn" >
+        </DataGrid>
+        <UniformGrid Grid.Row="4" Grid.Column="0">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblNumber_Komnati" Content="Номер зала" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbNumber_Komnati" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Number_Komnati,
+                                 ElementName=dgZakaz}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="4" Grid.Column="1">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblTip_Kalyana" Content="Тип кальяна" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbTip_Kalyana" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Tip_Kalyana,
+                                 ElementName=dgZakaz}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="5" Grid.Column="0">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblTip_Tabaka" Content="Тип табака" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbTip_Tabaka" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Tip_Tabaka,
+                                 ElementName=dgZakaz}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="5" Grid.Column="1">
+            <StackPanel Grid.Column="0">
+                <Label Name="lblJurnal" Content="Журнал:" FontSize="20"></Label>
+                <ComboBox Name="cbJurnal" Height="30" SelectedValue="{Binding SelectedItem.Jurnal_ID,
+                        ElementName=dgZakaz}"></ComboBox>
+            </StackPanel>
+        </UniformGrid>
+        <UniformGrid Grid.Row="7" Grid.ColumnSpan="2">
+            <StackPanel>
+                <Button Name="btZakazInsertType" Content="Добавить запись" Height="25" Click="BtZakazInsertType_Click"></Button>
+                <Button Name="btZakazUpdateType" Content="Изменить запись" Height="25" Click="BtZakazUpdate_Click"></Button>
+                <Button Name="btZakazDeleteType" Content="Удалить запись" Height="25" Click="BtZakazDeleteType_Click"></Button>
+            </StackPanel>
+        </UniformGrid>
+        <UniformGrid Grid.Row="8" Grid.Column="0">
+            <StackPanel>
+                <TextBox Name="tbSearch"  Height="30" Grid.Column="0" ></TextBox>
+                <Button Name="btSearch" Content="Поиск" Height="30" VerticalAlignment="Top" Click="BtSearch_Click"></Button>
+                <CheckBox Name="chbFilter" Content="Отфильтровать" VerticalAlignment="Center"  FontSize="10" Height="20" Checked="ChbFilter_Checked"></CheckBox>
+            </StackPanel>
+        </UniformGrid>
+        <Button Name="btClose" Content="Закрыть" Grid.Row="8" Grid.Column="1" Click="BtClose_Click"  Margin="0,0,0,43"/>
+    </Grid>
+</Window>

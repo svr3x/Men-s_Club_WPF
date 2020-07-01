@@ -1,0 +1,36 @@
+﻿<Window x:Class="Mens_ClubWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mens_ClubWPF"
+        mc:Ignorable="d"
+        Title="Таблицы" Height="600" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Name="lblTitle" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="Переход по таблицам" 
+               HorizontalContentAlignment="Center" FontSize="30">
+        </Label>
+        <Button Name="btDolgnost" Content="Должность" Grid.Column="1" Grid.Row="1" FontSize="25" Click="BtDolgnost_Click"  ></Button>
+        <Button Name="btSotrudniki" Content="Сотрудники" Grid.Column="1" Grid.Row="2" FontSize="25" Click="BtSotrudniki_Click" ></Button>
+        <Button Name="btPostavshik" Content="Поставщик" Grid.Column="1" Grid.Row="3" FontSize="25" Click="BtPostavshik_Click" ></Button>
+        <Button Name="btJurnal" Content="Журнал" Grid.Column="1" Grid.Row="4" FontSize="25" Click="BtJurnal_Click"  ></Button>
+        <Button Name="btZakaz" Content="Заказ" Grid.Column="1" Grid.Row="5" FontSize="25" Click="BtZakaz_Click" ></Button>
+        <Button Name="btCheck" Content="Чек" Grid.Column="1" Grid.Row="6" FontSize="25" Click="BtCheck_Click" ></Button>
+    </Grid>
+</Window>

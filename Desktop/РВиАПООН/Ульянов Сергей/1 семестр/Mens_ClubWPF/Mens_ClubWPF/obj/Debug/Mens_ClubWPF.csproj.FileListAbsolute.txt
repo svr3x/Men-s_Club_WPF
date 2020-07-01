@@ -1,0 +1,58 @@
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.csprojAssemblyReference.cache
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Dolgnost.g.cs
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\MainWindow.g.cs
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\App.g.cs
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF_MarkupCompile.cache
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF_MarkupCompile.lref
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Check.g.cs
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Jurnal.g.cs
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Postavshik.g.cs
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Sotrudniki.g.cs
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Zakaz.g.cs
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\bin\Debug\Mens_ClubWPF.exe.config
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\bin\Debug\Mens_ClubWPF.exe
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\bin\Debug\Mens_ClubWPF.pdb
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Check.baml
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Dolgnost.baml
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Jurnal.baml
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\MainWindow.baml
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Postavshik.baml
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Sotrudniki.baml
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Zakaz.baml
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.g.resources
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.Properties.Resources.resources
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.csproj.GenerateResource.cache
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.csproj.CoreCompileInputs.cache
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.exe
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.pdb
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Authorizacia.g.cs
+C:\Users\CVR3X\source\repos\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Authorizacia.baml
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\bin\Debug\Mens_ClubWPF.exe.config
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\bin\Debug\Mens_ClubWPF.exe
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\bin\Debug\Mens_ClubWPF.pdb
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.csprojAssemblyReference.cache
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Authorizacia.g.cs
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Check.g.cs
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Dolgnost.g.cs
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Jurnal.g.cs
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\MainWindow.g.cs
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Postavshik.g.cs
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Sotrudniki.g.cs
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Zakaz.g.cs
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\App.g.cs
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF_MarkupCompile.cache
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF_MarkupCompile.lref
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Authorizacia.baml
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Check.baml
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Dolgnost.baml
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Jurnal.baml
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\MainWindow.baml
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Postavshik.baml
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Sotrudniki.baml
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Zakaz.baml
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.g.resources
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.Properties.Resources.resources
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.csproj.GenerateResource.cache
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.csproj.CoreCompileInputs.cache
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.exe
+C:\Users\CVR3X\Desktop\РВиАПООН\Ульянов Сергей\1 семестр\Mens_ClubWPF\Mens_ClubWPF\obj\Debug\Mens_ClubWPF.pdb

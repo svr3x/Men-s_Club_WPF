@@ -1,0 +1,118 @@
+﻿<Window x:Class="Mens_ClubWPF.Check"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mens_ClubWPF"
+        mc:Ignorable="d"
+        Title="Check" Height="800" Width="800" Loaded="Check_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Name="lblTitle" Content="Чек" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30"></Label>
+        <DataGrid Name="dgCheck" Grid.Row="1" IsReadOnly="True" Grid.Column="0" Grid.ColumnSpan="4"
+                Grid.RowSpan="3" ColumnWidth="auto" AutoGenerateColumns="True" AutoGeneratingColumn="DgCheck_AutoGeneratingColumn" >
+        </DataGrid>
+        <UniformGrid Grid.Row="4" Grid.Column="0">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblNumber_Check" Content="Номер чека" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbNumber_Check" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Number_Check,
+                                 ElementName=dgCheck}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="4" Grid.Column="1">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblSymma_Zakaza" Content="Сумма заказа" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbSymma_Zakaza" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Symma_Zakaza,
+                                 ElementName=dgCheck}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="5" Grid.Column="0">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblData" Content="Дата" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbData" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Data,
+                                 ElementName=dgCheck}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="5" Grid.Column="1">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblLast_Name_Sotrudnik" Content="Фамилия сотрудника" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <ComboBox Name="cbLast_Name_Sotrudnik" Height="30" SelectedValue="{Binding SelectedItem.Sotrudnik_ID,
+                        ElementName=dgCheck}"></ComboBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="6" Grid.Column="0">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblNumber_Komnati" Content="Номер зала" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <ComboBox Name="cbNumber_Komnati" Height="30" SelectedValue="{Binding SelectedItem.Zakaz_ID,
+                        ElementName=dgCheck}"></ComboBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+        <UniformGrid Grid.Row="6" Grid.Column="1">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblTip_Kalyana" Content="Тип кальяна" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <ComboBox Name="cbTip_Kalyana" Height="30" SelectedValue="{Binding SelectedItem.Zakaz_ID,
+                        ElementName=dgCheck}"></ComboBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+        <UniformGrid Grid.Row="7" Grid.Column="0">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblTip_Tabaka" Content="Табак" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <ComboBox Name="cbTip_Tabaka" Height="30" SelectedValue="{Binding SelectedItem.Zakaz_ID,
+                        ElementName=dgCheck}"></ComboBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="8" Grid.ColumnSpan="2">
+            <StackPanel>
+                <Button Name="btCheckInsertType" Content="Добавить запись" Height="25" Click="BtCheckInsertType_Click"></Button>
+                <Button Name="btCheckUpdateType" Content="Изменить запись" Height="25" Click="BtCheckUpdateType_Click"></Button>
+                <Button Name="btCheckDeleteType" Content="Удалить запись" Height="25" Click="BtCheckDeleteType_Click"></Button>
+            </StackPanel>
+        </UniformGrid>
+        <UniformGrid Grid.Row="9" Grid.Column="0">
+            <StackPanel>
+                <TextBox Name="tbSearch"  Height="30" Grid.Column="0" ></TextBox>
+                <Button Name="btSearch" Content="Поиск" Height="30" VerticalAlignment="Top" Click="BtSearch_Click"></Button>
+                <CheckBox Name="chbFilter" Content="Отфильтровать" VerticalAlignment="Center"  FontSize="10" Height="20" Checked="ChbFilter_Checked"></CheckBox>
+            </StackPanel>
+        </UniformGrid>
+        <Button Name="btClose" Content="Закрыть" Grid.Row="9" Grid.Column="1" Click="BtClose_Click" Margin="0,0,0,43"/>
+    </Grid>
+</Window>

@@ -1,0 +1,101 @@
+﻿<Window x:Class="Mens_ClubWPF.Jurnal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mens_ClubWPF"
+        mc:Ignorable="d"
+        Title="Jurnal" Height="680" Width="800" Loaded="Jurnal_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Label Name="lblTitle" Content="Журнал" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30"></Label>
+        <DataGrid Name="dgJurnal" Grid.Row="1" IsReadOnly="True" Grid.Column="0" Grid.ColumnSpan="4"
+                Grid.RowSpan="3" ColumnWidth="auto" AutoGenerateColumns="True" AutoGeneratingColumn="DgJurnal_AutoGeneratingColumn" >
+        </DataGrid>
+        <UniformGrid Grid.Row="4" Grid.Column="0">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblName_Tovara" Content="Название товара" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbName_Tovara" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Name_Tovara,
+                                 ElementName=dgJurnal}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="4" Grid.Column="1">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblTip_Tovara" Content="Тип товара" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbTip_Tovara" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Tip_Tovara,
+                                 ElementName=dgJurnal}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="5" Grid.Column="0">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblKolichestvo" Content="Количество" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbKolichestvo" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Kolichestvo,
+                                 ElementName=dgJurnal}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="5" Grid.Column="1">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblPrice_of_Tovar" Content="Цена товара" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbPrice_of_Tovar" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Price_of_Tovar,
+                                 ElementName=dgJurnal}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="6" Grid.Column="0">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblPostavshik" Content="Поставщик" Grid.Row="5" ></Label>
+                <ComboBox Name="cbPostavshik" Height="30" SelectedValue="{Binding SelectedItem.Postavshik_ID,
+                        ElementName=dgJurnal}"></ComboBox>
+                
+            </StackPanel>
+        </UniformGrid>
+        <UniformGrid Grid.Row="7" Grid.ColumnSpan="2">
+            <StackPanel>
+                <Button Name="btJurnalInsertType" Content="Добавить запись" Height="25" Click="BtJurnalInsertType_Click"></Button>
+                <Button Name="btJurnalUpdateType" Content="Изменить запись" Height="25" Click="BtJurnalUpdateType_Click"></Button>
+                <Button Name="btJurnalDeleteType" Content="Удалить запись" Height="25" Click="BtJurnalDeleteType_Click"></Button>
+            </StackPanel>
+        </UniformGrid>
+        <UniformGrid Grid.Row="8" Grid.Column="0">
+            <StackPanel>
+                <TextBox Name="tbSearch"  Height="30" Grid.Column="0" ></TextBox>
+                <Button Name="btSearch" Content="Поиск" Height="30" VerticalAlignment="Top" Click="BtSearch_Click"></Button>
+                <CheckBox Name="chbFilter" Content="Отфильтровать" VerticalAlignment="Center"  FontSize="10" Height="20" Checked="ChbFilter_Checked"></CheckBox>
+            </StackPanel>
+        </UniformGrid>
+        <Button Name="btClose" Content="Закрыть" Grid.Row="8" Grid.Column="1"  Margin="0,0,0,43" Click="BtClose_Click"/>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,101 @@
+﻿<Window x:Class="Mens_ClubWPF.Postavshik"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mens_ClubWPF"
+        mc:Ignorable="d"
+        Title="Postavshik" Height="750" Width="800" Loaded="Postavshik_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Name="lblTitle" Content="Поставщики" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30"></Label>
+        <DataGrid Name="dgPostavshik" Grid.Row="1" IsReadOnly="True" Grid.Column="0" Grid.ColumnSpan="4"
+                Grid.RowSpan="3" ColumnWidth="auto" AutoGenerateColumns="True" AutoGeneratingColumn="DgPostavshik_AutoGeneratingColumn" >
+        </DataGrid>
+        <UniformGrid Grid.Row="4" Grid.Column="0">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblLast_Name_Postavshik" Content="Фамилия поставщика" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbLast_Name_Postavshik" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Last_Name_Postavshik,
+                                 ElementName=dgPostavshik}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="4" Grid.Column="1">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblName_Postavshik" Content="Имя поставщика" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbName_Postavshik" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Name_Postavshik,
+                                 ElementName=dgPostavshik}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="5" Grid.Column="0">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblMidlle_Name_Postavshik" Content="Отчество" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbMidlle_Name_Postavshik" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Midlle_Name_Postavshik,
+                                 ElementName=dgPostavshik}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="5" Grid.Column="1">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblLoign_Postavshika" Content="Логин" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbLoign_Postavshika" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Loign_Postavshika,
+                                 ElementName=dgPostavshik}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="6" Grid.Column="0">
+            <StackPanel Grid.Column="1" >
+                <Label Name="lblPassword_Postavshika" Content="Пароль" Grid.Row="5" ></Label>
+                <Border BorderThickness="1" BorderBrush="Black"  >
+                    <TextBox Name="tbPassword_Postavshika" Grid.Row="2" 
+                             Text="{Binding SelectedItem.Password_Postavshika,
+                                 ElementName=dgPostavshik}"></TextBox>
+                </Border>
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="7" Grid.ColumnSpan="2">
+            <StackPanel>
+                <Button Name="btPostavshikInsertType" Content="Добавить запись" Height="25" Click="BtPostavshikInsertType_Click"></Button>
+                <Button Name="btPostavshikUpdateType" Content="Изменить запись" Height="25" Click="BtPostavshikUpdateType_Click"></Button>
+                <Button Name="btPostavshikDeleteType" Content="Удалить запись" Height="25" Click="BtPostavshikDeleteType_Click"></Button>
+            </StackPanel>
+        </UniformGrid>
+        <UniformGrid Grid.Row="8" Grid.Column="0">
+            <StackPanel>
+                <TextBox Name="tbSearch"  Height="30" Grid.Column="0" ></TextBox>
+                <Button Name="btSearch" Content="Поиск" Height="30" VerticalAlignment="Top" Click="BtSearch_Click"></Button>
+                <CheckBox Name="chbFilter" Content="Отфильтровать" VerticalAlignment="Center"  FontSize="10" Height="20" Checked="ChbFilter_Checked"></CheckBox>
+            </StackPanel>
+        </UniformGrid>
+        <Button Name="btClose" Content="Закрыть" Grid.Row="8" Grid.Column="1" Click="BtClose_Click" Margin="0,0,0,43"/>
+    </Grid>
+</Window>
